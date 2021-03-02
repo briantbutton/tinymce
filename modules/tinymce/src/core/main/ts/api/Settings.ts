@@ -143,6 +143,8 @@ const getServiceMessage = (editor: Editor): string => editor.getParam('service_m
 
 const getTheme = (editor: Editor) => editor.getParam('theme');
 
+const getModel = (editor: Editor) => editor.getParam('model');
+
 const shouldValidate = (editor: Editor): boolean => editor.getParam('validate');
 
 const isInlineBoundariesEnabled = (editor: Editor): boolean => editor.getParam('inline_boundaries') !== false;
@@ -241,6 +243,7 @@ export {
   getEventRoot,
   getServiceMessage,
   getTheme,
+  getModel,
   shouldValidate,
   isInlineBoundariesEnabled,
   getFormats,
